@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>711C53B5-D65E-47A0-99EA-BE0D5054C76E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Three20</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>081897A7C5D17A806A44CE9C857D4CF3F2832004</key>
+		<string>git://github.com/facebook/three20.git</string>
+		<key>2FE30D25C02C67BBD5783832FA85CD3ACBD2D20A</key>
+		<string>ssh://ssh.pixineers.com:5114/iftu.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Three20.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>081897A7C5D17A806A44CE9C857D4CF3F2832004</key>
+		<string>..</string>
+		<key>2FE30D25C02C67BBD5783832FA85CD3ACBD2D20A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>git://github.com/facebook/three20.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>081897A7C5D17A806A44CE9C857D4CF3F2832004</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2FE30D25C02C67BBD5783832FA85CD3ACBD2D20A</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>081897A7C5D17A806A44CE9C857D4CF3F2832004</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Three20</string>
+		</dict>
+	</array>
+</dict>
+</plist>

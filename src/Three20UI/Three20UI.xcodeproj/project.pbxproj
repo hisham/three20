@@ -2332,11 +2332,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E64543D1184BE1B00F08CB1 /* Project.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
+				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64";
 			};
 			name = Internal;
 		};
@@ -2352,6 +2354,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				ONLY_ACTIVE_ARCH = YES;
 				RUN_CLANG_STATIC_ANALYZER = YES;
+				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64";
 			};
 			name = Internal;
 		};
@@ -2380,6 +2383,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				ONLY_ACTIVE_ARCH = YES;
+				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -2390,6 +2394,7 @@
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ONLY_ACTIVE_ARCH = YES;
+				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64";
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -2398,11 +2403,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E64543D1184BE1B00F08CB1 /* Project.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
+				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64";
 			};
 			name = Debug;
 		};
@@ -2410,11 +2417,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E64543D1184BE1B00F08CB1 /* Project.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphoneos*]" = 5.1.1;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
+				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64";
 			};
 			name = Release;
 		};

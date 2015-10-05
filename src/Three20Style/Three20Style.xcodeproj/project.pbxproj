@@ -964,6 +964,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6EE7364B11849B3D00A35176 /* Library.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -982,6 +983,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6EE7364B11849B3D00A35176 /* Library.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -997,6 +999,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6EE7364B11849B3D00A35176 /* Library.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;

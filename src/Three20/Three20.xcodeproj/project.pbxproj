@@ -468,6 +468,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E64543D1184BE1B00F08CB1 /* Project.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -533,6 +534,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E64543D1184BE1B00F08CB1 /* Project.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -549,6 +551,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6E64543D1184BE1B00F08CB1 /* Project.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;

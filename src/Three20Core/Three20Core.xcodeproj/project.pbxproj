@@ -342,7 +342,6 @@
 			buildConfigurationList = BEF31F410F352E14000DE5D2 /* Build configuration list for PBXNativeTarget "Three20Core" */;
 			buildPhases = (
 				BEF31F360F352DF5000DE5D2 /* Headers */,
-				6E645EC91187AB0500F08CB1 /* Protect Copied Headers */,
 				BEF31F370F352DF5000DE5D2 /* Sources */,
 				668E63EA131A42F500ACE4AB /* Lint */,
 				BEF31F380F352DF5000DE5D2 /* Frameworks */,
@@ -399,20 +398,6 @@
 			shellPath = "/usr/bin/env python ../scripts/lint";
 			shellScript = "";
 			showEnvVarsInLog = 0;
-		};
-		6E645EC91187AB0500F08CB1 /* Protect Copied Headers */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Protect Copied Headers";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = "/bin/sh ../scripts/Protect.command";
-			shellScript = "";
 		};
 /* End PBXShellScriptBuildPhase section */
 

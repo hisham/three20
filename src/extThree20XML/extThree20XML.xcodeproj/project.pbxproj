@@ -29,26 +29,12 @@
 			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2;
 			remoteInfo = Three20Core;
 		};
-		6E645A7111876D3F00F08CB1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E645A6A11876D3F00F08CB1 /* Three20Core.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C;
-			remoteInfo = UnitTests;
-		};
 		6E645A7811876D4600F08CB1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6E645A7311876D4600F08CB1 /* Three20Network.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2;
 			remoteInfo = Three20Network;
-		};
-		6E645A7A11876D4600F08CB1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E645A7311876D4600F08CB1 /* Three20Network.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C;
-			remoteInfo = UnitTests;
 		};
 		6E645A7C11876D5800F08CB1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -63,20 +49,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
 			remoteInfo = Three20Network;
-		};
-		6E645AA511876E3500F08CB1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E645A6A11876D3F00F08CB1 /* Three20Core.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = EB9E6C6110B6A8F800DE563C;
-			remoteInfo = UnitTests;
-		};
-		6E645AA711876E3500F08CB1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6E645A7311876D4600F08CB1 /* Three20Network.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = EB9E6C6110B6A8F800DE563C;
-			remoteInfo = UnitTests;
 		};
 		6EB460DD1183D8D400685649 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -184,7 +156,6 @@
 			isa = PBXGroup;
 			children = (
 				6E645A7011876D3F00F08CB1 /* libThree20Core.a */,
-				6E645A7211876D3F00F08CB1 /* CoreUnitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -193,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				6E645A7911876D4600F08CB1 /* libThree20Network.a */,
-				6E645A7B11876D4600F08CB1 /* NetworkUnitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -258,7 +228,6 @@
 			buildConfigurationList = BEF31F410F352E14000DE5D2 /* Build configuration list for PBXNativeTarget "extThree20XML" */;
 			buildPhases = (
 				BEF31F360F352DF5000DE5D2 /* Headers */,
-				6E3C34AD118807DC0079637E /* Protect Copied Headers */,
 				BEF31F370F352DF5000DE5D2 /* Sources */,
 				668E66BF131AE03600ACE4AB /* Lint */,
 				BEF31F380F352DF5000DE5D2 /* Frameworks */,
@@ -286,8 +255,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				6E645AA611876E3500F08CB1 /* PBXTargetDependency */,
-				6E645AA811876E3500F08CB1 /* PBXTargetDependency */,
 				6EB460DE1183D8D400685649 /* PBXTargetDependency */,
 			);
 			name = extThree20XMLUnitTests;
@@ -342,25 +309,11 @@
 			remoteRef = 6E645A6F11876D3F00F08CB1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		6E645A7211876D3F00F08CB1 /* CoreUnitTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = CoreUnitTests.octest;
-			remoteRef = 6E645A7111876D3F00F08CB1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		6E645A7911876D4600F08CB1 /* libThree20Network.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libThree20Network.a;
 			remoteRef = 6E645A7811876D4600F08CB1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		6E645A7B11876D4600F08CB1 /* NetworkUnitTests.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = NetworkUnitTests.octest;
-			remoteRef = 6E645A7A11876D4600F08CB1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -391,20 +344,6 @@
 			shellPath = "/usr/bin/env python ../scripts/lint";
 			shellScript = "";
 			showEnvVarsInLog = 0;
-		};
-		6E3C34AD118807DC0079637E /* Protect Copied Headers */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Protect Copied Headers";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = "/bin/sh ../scripts/Protect.command";
-			shellScript = "";
 		};
 		EB9E6C6010B6A8F800DE563C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -452,16 +391,6 @@
 			isa = PBXTargetDependency;
 			name = Three20Network;
 			targetProxy = 6E645A7E11876D5800F08CB1 /* PBXContainerItemProxy */;
-		};
-		6E645AA611876E3500F08CB1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UnitTests;
-			targetProxy = 6E645AA511876E3500F08CB1 /* PBXContainerItemProxy */;
-		};
-		6E645AA811876E3500F08CB1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = UnitTests;
-			targetProxy = 6E645AA711876E3500F08CB1 /* PBXContainerItemProxy */;
 		};
 		6EB460DE1183D8D400685649 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

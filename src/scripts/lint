@@ -29,7 +29,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 """
 
-import ConfigParser
+import configparser
 import logging
 import os
 import Paths
@@ -168,7 +168,7 @@ def lint_project(project_path, options):
 			# Only update the last known modification time if there weren't any errors.
 			mtimes[filename] = mtime
 		else:
-			print "If you would like to disable the lint tool, please read the instructions in config.template in the root of the Three20 project"
+			print("If you would like to disable the lint tool, please read the instructions in config.template in the root of the Three20 project")
 			if filename in mtimes:
 				del mtimes[filename]
 	
@@ -216,7 +216,7 @@ def lint_basics(filedata, filename, linenofilter, isdelinting = False):
 	
 	logger = logging.getLogger()
 
-	lines = string.split(filedata, "\n")
+	lines = filedata.split("\n")
 	linenofilter.lineno = 1
 
 	prevline = None

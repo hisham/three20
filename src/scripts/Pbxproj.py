@@ -452,7 +452,7 @@ class Pbxproj(object):
 		# Version 46 is Xcode 4's file format.
 		try:
 			primary_version = int(self._xcode_version.split('.')[0])
-		except ValueError, e:
+		except ValueError as e:
 			primary_version = 0
 		if self._projectVersion >= 46 or primary_version >= 4:
 			did_add_build_setting = self.add_build_setting(configuration, 'HEADER_SEARCH_PATHS', '"$(BUILT_PRODUCTS_DIR)/../../three20"')
@@ -470,7 +470,7 @@ class Pbxproj(object):
 
 		match = re.search('\/\* '+configuration+' \*\/ = {\n[ \t]+isa = XCBuildConfiguration;\n(?:.|\n)+?[ \t]+buildSettings = \{\n((?:.|\n)+?)\};', project_data)
 		if not match:
-			print "Couldn't find the "+configuration+" configuration in "+self.path()
+			print("Couldn't find the "+configuration+" configuration in "+self.path())
 			return False
 
 		settings_start = match.start(1)

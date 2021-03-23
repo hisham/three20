@@ -361,7 +361,6 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 0800;
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Three20Network" */;
@@ -456,7 +455,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64";
+				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64 x86_64";
 			};
 			name = Internal;
 		};
@@ -472,7 +471,7 @@
 				OTHER_CFLAGS = "-fembed-bitcode";
 				"OTHER_CFLAGS[arch=*]" = "-fembed-bitcode";
 				RUN_CLANG_STATIC_ANALYZER = YES;
-				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64";
+				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64 x86_64";
 			};
 			name = Internal;
 		};
@@ -481,12 +480,13 @@
 			baseConfigurationReference = 6EE7364B11849B3D00A35176 /* Library.xcconfig */;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-fembed-bitcode";
-				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64";
+				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64 x86_64";
 			};
 			name = Debug;
 		};
@@ -499,7 +499,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = "-fembed-bitcode";
 				"OTHER_CFLAGS[arch=*]" = "-fembed-bitcode";
-				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64";
+				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64 x86_64";
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -532,7 +532,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64";
+				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64 x86_64";
 			};
 			name = Debug;
 		};
@@ -564,7 +564,7 @@
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphoneos*]" = 5.1.1;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64";
+				VALID_ARCHS = "i386 armv6 armv7 armv7s arm64 x86_64";
 			};
 			name = Release;
 		};
